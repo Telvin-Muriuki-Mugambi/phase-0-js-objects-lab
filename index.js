@@ -7,8 +7,11 @@ const attendee = {
   ticketPrice: 150.00,
 }
 
+function logAttendeeName(attendee){
+  console.log(attendee.name)
+}
 
-
+logAttendeeName(attendee)
 
 //Needed for the tests to work. Don't modify
 module.exports = {
