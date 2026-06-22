@@ -13,6 +13,12 @@ function logAttendeeName(attendee){
 
 logAttendeeName(attendee)
 
+function logTicketPrice(attendee){
+  console.log(attendee.ticketPrice)
+}
+
+logTicketPrice(attendee)
+
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
