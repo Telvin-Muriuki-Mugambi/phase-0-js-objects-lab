@@ -19,6 +19,14 @@ function logTicketPrice(attendee){
 
 logTicketPrice(attendee)
 
+
+function updateTicketPrice(attendee, newTicketPrice){
+  attendee["ticketPrice"] = newTicketPrice
+}
+
+updateTicketPrice(attendee, 300)
+console.log(attendee)
+
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
